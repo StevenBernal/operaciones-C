@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <Style>
+        #Cabeza {
+            background-color: #b0bec5;
+
+            border: 3px solid black;
+        }
+
+        .Contenido {
+            border: 3px solid black;
+            background-color: #b0bec5;
+        }
+
+        .Contenido1 {
+            border: 3px solid black;
+            background-color: #b0bec5;
+        }
+
+        .Contenido2 {
+            border: 3px solid black;
+            background-color: #b0bec5;
+            height: 60px;
+        }
+
+        #botones {
+            width: 100px;
+            height: 54px;
+            padding-top: 10px;
+            font-size: 30px;
+        }
+
+        .row {
+            margin-top: -25px;
+        }
+    </Style>
+</head>
+
+<body>
+
+
+    <Div class="container">
+        <Table>
+            <Tr>
+                <h3 class="center" id="Cabeza"> <b> CALCULATOR </b></h3>
+            </Tr>
+    </div>
+
+    <div class="row">
+        <div class="Contenido1 col l8">
+            <input type="number" name="numero1" id="numero1">
+        </div>
+        <div class="row">
+            <div class="Contenido2 2 col l2 center">
+                <a id="botones" class="waves-effect waves-light btn red accent-4" onclick="sumar()">+</a>
+            </div>
+            <div class="Contenido2 col l2 center">
+                <a id="botones" class="waves-effect waves-light btn red accent-4" onclick="restar()">-</a>
+            </div>
+
+            <div class="row">
+                <div class="Contenido1 col l8">
+                    <input type="number" name="numero2" id="numero2">
+                </div>
+                <div class="Contenido2 col l2 center">
+                    <a id="botones" class="waves-effect waves-light btn red accent-4" onclick="multi()">*</a>
+                </div>
+                <div class="Contenido2 col l2 center">
+                    <a id="botones" class="waves-effect waves-light btn red accent-4" onclick="divi()">/</a>
+                </div>
+
+                </Table>
+            </Div>
+        </div>
+        
+       
+        <script>
+            
+            function sumar(){
+                
+                var numero1=document.getElementById('numero1').value;
+                var numero2=document.getElementById('numero2').value;
+                var resultado = parseInt(numero1) + parseInt(numero2);
+
+                alert(resultado); 
+            }
+
+            function restar(){
+                
+                var numero1=document.getElementById('numero1').value;
+                var numero2=document.getElementById('numero2').value;
+                var resultado = parseInt(numero1) - parseInt(numero2);
+
+                alert(resultado); 
+            }
+
+            function multi(){
+                
+                var numero1=document.getElementById('numero1').value;
+                var numero2=document.getElementById('numero2').value;
+                var resultado = parseInt(numero1) * parseInt(numero2);
+
+                alert(resultado); 
+            }
+
+            function divi(){
+                
+                var numero1=document.getElementById('numero1').value;
+                var numero2=document.getElementById('numero2').value;
+                var resultado = parseInt(numero1) / parseInt(numero2);
+
+                alert(resultado); 
+            }
+
+
+
+
+            
+
+            
+        </script>
+        
+
+
+            
+
+</body>
+
+</html>
